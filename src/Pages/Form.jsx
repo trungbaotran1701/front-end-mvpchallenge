@@ -78,8 +78,8 @@ const Form = () => {
             </form>
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="max-w-screen-lg flex flex-wrap gap-4">
+        <div className="flex justify-center mb-[30px]">
+          <div className="max-w-screen-lg flex flex-wrap gap-4 justify-between px-5">
             {listUser &&
               listUser.map((user, index) => (
                 <Link

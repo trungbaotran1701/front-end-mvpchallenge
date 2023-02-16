@@ -17,7 +17,7 @@ const getListUser = async (data) => {
 const getUserCommit = async ({ ownerName, repoName, author }) => {
   try {
     const response = await fetch(
-      `${API_GIT}/repos/${ownerName}/${repoName}/commits?author=${author}`,
+      `${API_GIT}/repos/${ownerName}/${repoName}/commits?author=${author}&per_page=1000`,
       {
         method: "GET",
         headers: HEADERS,
