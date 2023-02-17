@@ -14,6 +14,7 @@ const getListUser = async (data) => {
   }
 };
 
+//call API github
 const getUserCommit = async ({ ownerName, repoName, author }) => {
   try {
     const response = await fetch(
