@@ -5,6 +5,7 @@ import Input from "../common/Input";
 import { getListUser } from "../api/callApi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CreateWallet } from "../common";
 
 const Form = () => {
   const schema = yup.object().shape({
@@ -50,6 +51,7 @@ const Form = () => {
     <>
       <div className="bg-blue-200 min-h-screen flex flex-col gap-[40px]">
         <div className="w-full mt-[50px]">
+          <CreateWallet />
           <h2 className="text-center text-blue-400 font-bold text-2xl uppercase mb-10">
             MVP Challenge
             <p className="text-sm text-red-400 mt-2">
